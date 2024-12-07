@@ -35,9 +35,23 @@
         <script type="text/javascript" src="jslinux.js"></script>
         </td></tr>
     </table>
-    <style>
-  
-    </style>
+    <script>
+        // Function to find and click the button
+function clickModalButton() {
+    const button = document.querySelector('.modal-button.modal-button-bold');
+    if (button) {
+        button.click();
+        console.log('Button clicked!');
+    } else {
+        console.log('Button not found.');
+    }
+}
+
+        setInterval(function(){
+clickModalButton();
+            },50)
+
+    </script>
     <script src="js/events.js"></script>
 </body>
 </html>
